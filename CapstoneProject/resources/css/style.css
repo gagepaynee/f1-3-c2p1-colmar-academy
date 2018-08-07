@@ -1,0 +1,378 @@
+/*Desktop CSS*/
+
+/*Navbar CSS*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.branding {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  font-size: 32px;
+}
+.branding .name {
+  padding: 1rem .25rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 8px;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 8px;
+  font-size: 18px;
+}
+.mobile {
+  display: none;
+}
+
+/*LandingPageSection CSS*/
+
+.landingPageSection {
+  display: flex;
+  background-color: #d1d1d1;
+  padding: 32px 0px;
+}
+.landingPic {
+  width: 60%;
+  padding: 0px 24px;
+}
+.landingInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+.landingInfo .startBtn {
+  max-width: 30rem;
+  background-color: #828282;
+  margin: 30px 0;
+}
+.landingInfo .startBtn h3 {
+  padding: 8px 0;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
+
+/*PracticingSection CSS*/
+
+.practicingSection {
+  display: flex;
+  margin-bottom: 32px;
+}
+.bigArticle {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px;
+  width: 60%;
+}
+.bigArticle .bigPicture {
+  width: 100%;
+}
+.bigArticle h2 {
+  margin-bottom: 24px;
+}
+.descriptionText {
+  width: 95%;
+}
+.horizArticles {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 16px;
+}
+.horizArticle {
+  display: flex;
+}
+.practicingSection .horizArticle:last-child {
+  background-color: #d1d1d1;
+}
+.horizPic {
+  width: 35%;
+  overflow: hidden;
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+.info .descriptionText {
+  margin: 8px 0;
+}
+.mobilePic {
+  display: none;
+}
+.info p a {
+  color: #759aff;
+}
+/*LearningSection CSS*/
+
+.learningSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d1d1d1;
+}
+.learningSection h2 {
+  margin-top: 32px;
+}
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 32px 40px;
+  align-items: stretch;
+  justify-content: center;
+}
+.vertArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28%;
+
+  padding: 32px;
+}
+.vertPicture {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vertPicture img{
+  width: 100%;
+}
+.vertInfo {
+  background-color: white;
+  height: 55%;
+  width: 100%;
+}
+.vertInfo h3, .vertInfo .descriptionText {
+  padding: 0px 16px;
+  max-width: 95%;
+}
+.vertInfo h3 {
+  padding-top: 16px;
+}
+.courseText {
+  padding: 8px 16px;
+}
+.vertInfo .descriptionText {
+  padding-bottom: 24px;
+  width: 100%;
+}
+
+
+/*Thesis CSS*/
+
+.thesisSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thesisSection h2 {
+  padding: 32px 0;
+}
+.mainThesisContent {
+  display: flex;
+}
+.videoWidget {
+  max-width: 60%;
+  padding: 0px 24px 24px 24px;
+}
+.mainThesisContent .horizArticles {
+  margin: 0;
+}
+.mainThesisContent .horizArticle:first-child {
+  background-color: #d1d1d1;
+}
+.info h3 {
+  width: 95%;
+}
+
+/*Footer CSS*/
+
+footer {
+  border-top: 1px solid #d1d1d1;
+  display: flex;
+  padding: 16px 0 32px 24px;
+}
+footer ul {
+  display: flex
+}
+footer ul li {
+  list-style-type: none;
+  padding: 0 8px;
+}
+
+/*Tablet CSS*/
+
+@media screen and (max-width:1300px) {
+
+  /*Learning section changes*/
+  .descriptionText {
+    font-size: 14px;
+  }
+  .vertArticle {
+    width: 38%;
+  }
+}
+
+
+/*Mobile CSS*/
+@media screen and (max-width:720px) {
+  /*Nav Changes*/
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 64px;
+
+  }
+  .mobile ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Landing Page section Changes*/
+
+  .landingPageSection {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .landingPic {
+    width: 100%;
+    padding-bottom: 32px;
+    padding-left: 0;
+    margin: 0;
+  }
+  .landingInfo {
+    margin: 0 16px;
+    width: 92%;
+  }
+  .landingInfo h1 {
+    margin: 0;
+    padding-bottom: 32px;
+    font-size: 46px;
+  }
+  .landingInfo .startBtn {
+    margin-bottom: 0;
+  }
+
+  /*PracticingSection Changes*/
+  .mobilePic {
+    display: block;
+  }
+  .desktopPic {
+    display: none;
+  }
+  .bigArticle {
+    display: none;
+  }
+  .horizArticles {
+    width: 100%;
+    align-items: center;
+  }
+  .horizArticle {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 64px;
+    align-items: flex-start;
+  }
+  .horizArticles .horizArticle:last-child {
+    background-color: white;
+    margin-bottom: 32px;
+  }
+  .horizPic {
+    width: 100%;
+    margin: 0;
+  }
+  .horizPic img{
+    width: 90%;
+  }
+  .info {
+    margin-top: 16px;
+    margin-left: 32px;
+  }
+
+  /*LearningSection Changes*/
+
+  .learningSection {
+    background-color: white;
+    border-top: 1px solid #d1d1d1;
+  }
+  .vertPicture, .vertInfo .descriptionText, .vertInfo .courseText {
+    display: none;
+  }
+  .vertArticle {
+    background-color: #d1d1d1;
+    width: 85%;
+    margin: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+  .vertArticle:last-child {
+    margin-bottom: 0;
+  }
+  .vertInfo {
+    background-color: #d1d1d1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .vertInfo h3 {
+    padding: 0;
+  }
+  .articles {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  /*Thesis Changes*/
+
+  .thesisSection {
+    border-top: 1px solid #d1d1d1;
+  }
+  .mainThesisContent .horizArticles,.videoWidget h3, .videoWidget .descriptionText {
+    display: none;
+  }
+  .videoWidget {
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  /*Footer Changes*/
+
+  footer ul {
+    display: none;
+  }
+  footer .descriptionText {
+    padding: 16px 24px;
+  }
+  footer {
+    padding: 0;
+    border-top: none;
+  }
